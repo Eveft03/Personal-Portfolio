@@ -1,24 +1,32 @@
-*{
-    background-color: #cbb4d8;
+
+body{
+    background-color: #d8cddf;
+    padding: 0%;
+    margin: 0%;
+    font-family: "DM Serif Display";
 }
 /*HEADER AND LOGO*/
 header{
   background-color: #5f4b6b;
-  padding: 20px;
+ 
   color: white;
   display: flex;
   justify-content: space-between;
+  padding: 20px; 
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .logo{
+    
     display: flex;
     align-items: center;
     justify-content: left;
-    color: white;
     padding: 0px 0px 0px 10px;
 
 }
 #myname{
+    
     padding-left: 10px;
 }
 
@@ -26,7 +34,7 @@ header{
 nav ul{
     display:flex;
     justify-content: right;
-    font-family: "DM Serif Display", serif;
+    
     
 }
 
@@ -61,5 +69,26 @@ flex-direction: column ;
 justify-content: center;
 align-items: center;
 gap: -20px;
+padding-top: 30px;
+border-bottom: 1px solid #000000;
+}
+
+.projects{
+ display: flexbox;
+ justify-content: left;
+ flex-direction: column;
+ padding: 0;
+ margin: 0;
+ border: 2px solid #000000;
  
+}
+
+.projects ul{
+    padding: 0;
+}
+
+ .projects p:not(:last-child) {
+    list-style: none;
+    border-bottom: 1px solid #000000;
+    padding: 0;
 }
