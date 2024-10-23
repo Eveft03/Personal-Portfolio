@@ -4,6 +4,7 @@ body{
     padding: 0%;
     margin: 0%;
     font-family: "DM Serif Display";
+    
 }
 /*HEADER AND LOGO*/
 header{
@@ -70,25 +71,98 @@ justify-content: center;
 align-items: center;
 gap: -20px;
 padding-top: 30px;
-border-bottom: 1px solid #000000;
+border-bottom: 1px dotted #000000;
+border-radius: 5px;
+background-color: #f0f0f0; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.projects{
- display: flexbox;
- justify-content: left;
- flex-direction: column;
- padding: 0;
- margin: 0;
- border: 2px solid #000000;
- 
+
+.container {
+    display: flex; /* Horizontal */
+    justify-content: space-between; 
+    gap: 3px; 
+    padding: 5px 0 0 0;
+    
 }
 
-.projects ul{
+/* SECTIONS */
+.container section {
+    flex: 30%; /*Taking up 30% of space each*/
+    padding: 20px;
+    background-color: #f0f0f0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 1px; 
+    border: 1px dotted #000000;
+}
+
+
+ /*Place of each section*/
+.work-experience {
+    order: 1; 
+    flex-basis: 100%; /*getting all the space*/
+    
+}
+
+.opensource-work {
+    order: 2; /*Below WE*/
+    flex-basis: 100%; 
+}
+
+
+.projects, .education {
+    order: 0; /* Same position */
+}
+
+ .projects ul {
     padding: 0;
+    margin: 0;
+    list-style: none;
 }
+
+ 
 
  .projects p:not(:last-child) {
     list-style: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000000 ;
     padding: 0;
+    margin: 0;
+    
+}
+
+.education {
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column ;
+   align-items: left;
+}
+
+.education ul {
+    list-style-type: '-';
+    padding: 0;
+}
+
+.reviews {
+    display: flex; /* Horizontal */
+    justify-content: space-between;
+    gap: 3px; 
+    padding: 5px 0 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f0f0f0; 
+}
+
+.reviews h2{
+    order: 1;
+}
+
+.reviews blockquote {
+    order: 2;
+    flex-direction: row;
+    flex: 30%; /*Taking up 30% of space each*/
+    padding: 20px;
+    background-color: #f0f0f0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 1px; 
+    border: 1px dotted #000000;
 }
