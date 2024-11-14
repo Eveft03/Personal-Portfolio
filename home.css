@@ -72,7 +72,7 @@ flex-direction: column ;
 justify-content: center;
 align-items: center;
 padding-top: 30px;
-border-bottom: 1px dotted #000000;
+border-bottom: 1px solid #000000;
 border-radius: 5px;
 background-color: #f0f0f0; 
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -80,69 +80,44 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 
 .container {
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     gap: 3px;
-    padding: 5px 0 0 0;
+    padding: 10px 0 10px 5px;
+  
 }
 
 .container section {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px 0px 0 5px;
+    padding: 10px 0px 0 0px;
     background-color: #f0f0f0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 3px;
     border: 1px solid #000000;
-   
 }
-
-.projects, .work-experience, .education {
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #000;
-    border-radius: 8px;
-}
-
-
-
- /*Place of each section*/
-.work-experience {
-    order: 1; 
-    flex-basis: 100%; /*getting all the space*/
+ .workc {
+    display: flex;
+    flex-direction: column; /* Τα στοιχεία εμφανίζονται κάθετα */
     
 }
-
-.opensource-work {
-    order: 2; /*Below WE*/
-    flex-basis: 100%; 
-}
-
-
-.projects, .education {
-    order: 0; /* Same position */
-}
-
  .projects ul {
-    padding: 0;
+    padding-left: 5px;
     margin: 0;
     list-style: none;
 }
-
- 
 
  .projects p:not(:last-child) {
     list-style: none;
     border-bottom: 1px solid #000000 ;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
 }
 
 .education {
-   padding: 0;
+   padding-left: 0;
    margin: 0;
    display: flex;
    flex-direction: column ;
@@ -150,11 +125,15 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .education ul {
-    list-style-type: '-';
-    padding: 0;
+    list-style-type: '○';
+    padding: 10px;
 }
-
-..reviews {
+.reviews-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.reviews {
     margin-top: 20px;
     padding: 20px;
     background-color: #f0f0f0;
@@ -164,21 +143,4 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 .reviews h2 {
     margin-bottom: 10px;
-}
-
-.review-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 8px;
-    width: 30%;
-    background-color: #fff;
-}
-
-.review-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
 }
