@@ -9,7 +9,6 @@ body{
 /*HEADER AND LOGO*/
 header{
   background-color: #5f4b6b;
- 
   color: white;
   display: flex;
   justify-content: space-between;
@@ -24,19 +23,22 @@ header{
     align-items: center;
     justify-content: left;
     padding: 0px 0px 0px 10px;
-
 }
+
+.logo a{
+    text-decoration: none;
+    color: inherit;
+}
+
 #myname{
-    
+    font-size: 18px;
     padding-left: 10px;
 }
 
 /*NAVIGATION BAR*/
 nav ul{
     display:flex;
-    justify-content: right;
-    
-    
+    justify-content: right;  
 }
 
 nav ul li{
@@ -69,7 +71,6 @@ display: flex;
 flex-direction: column ;
 justify-content: center;
 align-items: center;
-gap: -20px;
 padding-top: 30px;
 border-bottom: 1px dotted #000000;
 border-radius: 5px;
@@ -79,22 +80,32 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 
 .container {
-    display: flex; /* Horizontal */
-    justify-content: space-between; 
-    gap: 3px; 
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
     padding: 5px 0 0 0;
-    
 }
 
-/* SECTIONS */
 .container section {
-    flex: 30%; /*Taking up 30% of space each*/
-    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0 5px;
     background-color: #f0f0f0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 1px; 
-    border: 1px dotted #000000;
+    border-radius: 3px;
+    border: 1px solid #000000;
+   
 }
+
+.projects, .work-experience, .education {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
 
 
  /*Place of each section*/
@@ -143,26 +154,31 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0;
 }
 
-.reviews {
-    display: flex; /* Horizontal */
-    justify-content: space-between;
-    gap: 3px; 
-    padding: 5px 0 0 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    background-color: #f0f0f0; 
-}
-
-.reviews h2{
-    order: 1;
-}
-
-.reviews blockquote {
-    order: 2;
-    flex-direction: row;
-    flex: 30%; /*Taking up 30% of space each*/
+..reviews {
+    margin-top: 20px;
     padding: 20px;
-    background-color: #f0f0f0; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 1px; 
-    border: 1px dotted #000000;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.reviews h2 {
+    margin-bottom: 10px;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 30%;
+    background-color: #fff;
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
