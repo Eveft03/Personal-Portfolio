@@ -1,13 +1,8 @@
-/* GENERAL STYLES */
 body {
     background-color: #d8cddf;
     margin: 0;
+    padding:0;
     font-family:"Yeseva One";
-}
-
-h1, h2, h3 {
-    padding-left: 10px;
-    margin: 0;
 }
 
 /* HEADER AND LOGO */
@@ -75,102 +70,47 @@ nav ul li a:hover {
     text-shadow: 0 0 1px #d0a6ff;
 }
 
-/* ABOUT SECTION */
-.about {
-    text-align: center;
-    padding: 30px;
+.projects {
+    justify-content: center;
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(23, 1, 44, 0.384);
     margin: 20px auto;
-    width: 90%;
-}
-
-/* MAIN CONTAINER */
-.container {
-    display: flex;
-    gap: 10px;
     padding: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.container section {
-    flex: 0 0 auto;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(23, 1, 44, 0.384);
-}
-
-
-.projects ul, .education ul {
-    margin: 0;
-    padding-left: 20px;
-}
-
-.projects ul {
-    padding: 10px 0 0 0;
-    list-style: none;
-}
-
-.education ul {
-    list-style: circle;
-}
-
-/* WORK EXPERIENCE AND OPEN SOURCE */
-.workc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* REVIEWS SECTION */
-.reviews {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(23, 1, 44, 0.384);
-    width: 90%;
-    max-width: 1200px;
+    max-width: 900px;
     text-align: center;
 }
 
-.reviews h2 {
+
+.projects h1{
     margin-bottom: 20px;
     font-size: 24px;
 }
 
-.reviews-wrapper {
+
+.projects ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.reviews blockquote {
-    flex: 1;
-    padding: 20px;
-    background-color: white;
+    list-style: none;
+    flex-direction: column;
     border-radius: 8px;
     border: 1px solid #402d4b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.projects ul li{
+    flex: 1;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.reviews blockquote p {
-    margin: 0 0 10px;
-}
-
-.reviews blockquote footer {
-    margin-top: 10px;
+.projects ul p:not(:last-child) {
     font-size: 14px;
     color: #525252;
     font-style: normal;
     font-weight: bold;
+    border-bottom: 1px solid #402d4b;
+    padding: 0;
+    margin: 0;
 }
+
