@@ -104,11 +104,15 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.projects ul p:not(:last-child) {
+.projects ul p {
     font-size: 14px;
     color: #525252;
     font-style: normal;
     font-weight: bold;
+}
+
+.projects ul p:not(:last-child) {
+    
     border-bottom: 1px solid #402d4b;
     padding: 0;
     margin: 0;
