@@ -3,6 +3,7 @@ body {
     background-color: #d8cddf;
     margin: 0;
     font-family:"Yeseva One";
+    
 }
 
 h1, h2, h3 {
@@ -75,6 +76,23 @@ nav ul li a:hover {
     text-shadow: 0 0 1px #d0a6ff;
 }
 
+
+/*BUTTON*/
+button {
+    background-color: #5f4b6b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d0a6ff;
+}
+
+
+
 /* ABOUT SECTION */
 .about {
     text-align: center;
@@ -93,6 +111,7 @@ nav ul li a:hover {
     padding: 10px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-grow: 1;
 }
 
 .container section {
@@ -125,6 +144,10 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 10px;
 }
+
+.workc a{
+    color: var(--dark-bg);
+   }
 
 /* REVIEWS SECTION */
 .reviews {
@@ -173,4 +196,100 @@ nav ul li a:hover {
     color: #525252;
     font-style: normal;
     font-weight: bold;
+}
+
+ #Footer {
+    background-color: #5f4b6b;
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+    margin: auto; 
+    }
+
+
+   /*DARK MODE*/
+/* GENERAL DARK MODE COLORS */
+
+
+/* DARK MODE */
+/* GENERAL DARK MODE COLORS */
+:root {
+    --dark-bg: #2e2733; /* Σκούρο γκρι-μοβ για φόντο */
+    --dark-accent: #46394d; /* Μαλακό μοβ για κουτιά */
+    --dark-text: #c3b3d6; /* Απαλό μωβ-γκρι για κείμενο */
+    --dark-border: #5d4a6a; /* Ήπιο μοβ για περιγράμματα */
+    --dark-hover: #6d5a84; /* Λιγότερο φωτεινό hover */
+    --dark-highlight: #e2d7f3; /* Απαλό φωτεινό μοβ για τονισμό */
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.dark-mode header {
+    background-color: var(--dark-accent);
+}
+
+.dark-mode nav ul li a {
+    color: var(--dark-text);
+}
+
+.dark-mode nav ul li a:hover {
+    color: var(--dark-highlight);
+    text-shadow: 0 0 2px var(--dark-highlight);
+}
+
+.dark-mode .workc a{
+ color: var(--dark-text);
+}
+
+.dark-mode .container section,
+.dark-mode .about,
+.dark-mode .reviews,
+.dark-mode .reviews blockquote {
+    background-color: var(--dark-accent);
+    color: var(--dark-highlight);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--dark-border);
+}
+
+.dark-mode .reviews blockquote {
+    border-color: var(--dark-border);
+}
+
+.dark-mode #Footer {
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+}
+
+.dark-mode .reviews blockquote footer{
+    color: #d0a6ff;
+}
+
+button {
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--dark-hover);
+    transform: scale(1.2);
+}
+
+
+
+.dark-mode #toggle-dark-mode{
+    transform: rotate(180deg); /* Περιστροφή για εφέ */
+}
+
+/* RESPONSIVE DARK MODE BASED ON SYSTEM */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-bg);
+        color: var(--dark-text);
+    }
 }

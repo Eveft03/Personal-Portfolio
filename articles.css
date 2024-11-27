@@ -153,3 +153,11 @@ nav ul li a:hover {
     font-style: normal;
     font-weight: bold;
 }
+
+ #Footer {
+    background-color: #5f4b6b;
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+    margin-top: auto; 
+    }
