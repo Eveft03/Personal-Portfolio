@@ -236,4 +236,75 @@ input[type=submit]:hover {
     margin-top: auto; 
     }
 
-   
+    /*Dark Mode*/
+
+    :root {
+        --dark-bg: #2e2733; /* Σκούρο γκρι-μοβ για φόντο */
+        --dark-accent: #46394d; /* Μαλακό μοβ για κουτιά */
+        --dark-text: #c3b3d6; /* Απαλό μωβ-γκρι για κείμενο */
+        --dark-border: #5d4a6a; /* Ήπιο μοβ για περιγράμματα */
+        --dark-hover: #6d5a84; /* Λιγότερο φωτεινό hover */
+        --dark-highlight: #e2d7f3; /* Απαλό φωτεινό μοβ για τονισμό */
+    }
+
+    .dark-mode {
+        background-color: var(--dark-bg);
+        color: var(--dark-text);
+    }
+
+    .dark-mode .container h1{
+        color: var(--dark-highlight);
+    }
+    
+    .dark-mode header, .dark-mode footer{
+        background-color: var(--dark-accent);
+    }
+    
+    .dark-mode nav ul li a {
+        color: var(--dark-text);
+    }
+    
+    .dark-mode nav ul li a:hover {
+        color: var(--dark-highlight);
+        text-shadow: 0 0 2px var(--dark-highlight);
+    }
+    
+    .dark-mode form{
+        background-color: var(--dark-accent);
+        color: var(--dark-highlight );
+    }
+
+    .dark-mode input[type=text], .dark-mode [type=email], .dark-mode textarea {
+       background-color: var(--dark-text);
+    }
+    
+    .dark-mode input[type=submit]{
+        background-color: var(--dark-border);
+    }
+    
+    button {
+        background-color: var(--dark-accent);
+        color: var(--dark-text);
+        border: 1px solid var(--dark-border);
+        transition: transform 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: var(--dark-hover);
+        transform: scale(1.2);
+    }
+    
+    
+    
+    .dark-mode #toggle-dark-mode{
+        transform: rotate(180deg); /* Περιστροφή για εφέ */
+    }
+    
+    /* RESPONSIVE DARK MODE BASED ON SYSTEM */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+    }
+    

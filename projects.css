@@ -145,7 +145,7 @@ footer {
     color: var(--dark-text);
 }
 
-.dark-mode header, footer{
+.dark-mode header, .dark-mode footer{
     background-color: var(--dark-accent);
 }
 

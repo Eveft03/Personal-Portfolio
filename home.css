@@ -247,16 +247,15 @@ button:hover {
 
 .dark-mode .container section,
 .dark-mode .about,
-.dark-mode .reviews,
-.dark-mode .reviews blockquote {
+.dark-mode .reviews {
     background-color: var(--dark-accent);
     color: var(--dark-highlight);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border: 1px solid var(--dark-border);
 }
 
-.dark-mode .reviews blockquote {
-    border-color: var(--dark-border);
+.dark-mode .reviews-wrapper blockquote {
+    background-color: var(--dark-border);
 }
 
 .dark-mode #Footer {
