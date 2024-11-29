@@ -1,2 +1,18 @@
 # Personal-Portfolio
-Pesonal portfolio based on the html only website previously made.
+## A mockup of my pesonal portfolio. The third project from the "Frontend Projects" of roadmap.sh.
+(Full list here → https://roadmap.sh/frontend/projects)
+
+## Goal:
+The goal of the project is learning how to use CSS to create responsive layouts, apply color and typography, and enhance the overall design of the website.
+
+## Requirements:
+- [x] A fully styled and responsive website
+- [x] Consistent use of a color scheme and typography
+- [x] Use of CSS techniques like Flexbox, media queries, and the box model.
+- [x] A responsive navigation bar 
+- [x] A well-styled contact form
+
+## Bonus:
+- [x]  Utilize Google Fonts
+- [ ] Link to GitHub pages
+- [x] Add dark mode support
