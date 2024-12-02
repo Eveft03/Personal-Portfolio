@@ -207,19 +207,17 @@ button:hover {
     }
 
 
-   /*DARK MODE*/
-/* GENERAL DARK MODE COLORS */
 
 
-/* DARK MODE */
-/* GENERAL DARK MODE COLORS */
+
+
 :root {
-    --dark-bg: #2e2733; /* Σκούρο γκρι-μοβ για φόντο */
-    --dark-accent: #46394d; /* Μαλακό μοβ για κουτιά */
-    --dark-text: #c3b3d6; /* Απαλό μωβ-γκρι για κείμενο */
-    --dark-border: #5d4a6a; /* Ήπιο μοβ για περιγράμματα */
-    --dark-hover: #6d5a84; /* Λιγότερο φωτεινό hover */
-    --dark-highlight: #e2d7f3; /* Απαλό φωτεινό μοβ για τονισμό */
+    --dark-bg: #2e2733; 
+    --dark-accent: #46394d; 
+    --dark-text: #c3b3d6; 
+    --dark-border: #5d4a6a; 
+    --dark-hover: #6d5a84; 
+    --dark-highlight: #e2d7f3; 
 }
 
 /* DARK MODE */
@@ -282,7 +280,7 @@ button:hover {
 
 
 .dark-mode #toggle-dark-mode{
-    transform: rotate(180deg); /* Περιστροφή για εφέ */
+    transform: rotate(180deg); 
 }
 
 /* RESPONSIVE DARK MODE BASED ON SYSTEM */
