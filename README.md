@@ -1,5 +1,5 @@
 # Personal-Portfolio
-## A mockup of my pesonal portfolio. The third project from the "Frontend Projects" of roadmap.sh.
+## A mockup of my pesonal portfolio. 
 ## Link -> https://roadmap.sh/projects/portfolio-website
 (Full list here → https://roadmap.sh/frontend/projects)
 
